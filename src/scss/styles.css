@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Red+Hat+Text&display=swap");
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  8. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+:root {
+  --clr-grayishBlue: hsl(237, 18%, 59%);
+  --clr-softRed: hsl(345, 95%, 68%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-darkBlue: hsl(236,21%,26%);
+  --clr-veryDark: hsl(234, 17%, 12%);
+  --fs-body: 14px;
+  --fw-700: 700;
+}
+
+body {
+  font-family: "Red Hat Text", sans-serif;
+  font-size: var(--fs-body);
+  background-color: var(--clr-veryDark);
+  text-transform: uppercase;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-image: url(../../../images/bg-stars.svg);
+}
+
+.title {
+  color: var(--clr-white);
+  font-size: 0.6rem;
+  margin-bottom: 2em;
+}
+
+.countdown {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+}
+.countdown .box {
+  display: grid;
+  gap: 1em;
+  place-items: center;
+}
+.countdown .box .item {
+  color: var(--clr-softRed);
+  width: 65px;
+  height: 55px;
+  font-size: 2rem;
+  font-weight: var(--fw-700);
+  background-color: var(--clr-darkBlue);
+  text-align: center;
+}
+.countdown .box .time {
+  color: var(--clr-grayishBlue);
+}
+
+footer {
+  background-image: url(../../../images/pattern-hills.svg);
+}/*# sourceMappingURL=styles.css.map */

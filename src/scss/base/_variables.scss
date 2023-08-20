@@ -1,0 +1,26 @@
+:root {
+    // primary color
+    --clr-grayishBlue: hsl(237, 18%, 59%);
+    --clr-softRed: hsl(345, 95%, 68%);
+    // Neutral
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-darkBlue: hsl(236,21%,26%);
+    --clr-veryDark: hsl(234, 17%, 12%);
+    // font
+    --fs-body: 14px;
+    --fw-700: 700;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Red+Hat+Text&display=swap');
+
+
+body {
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: var(--fs-body);
+    background-color: var(--clr-veryDark);
+    text-transform: uppercase;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-image: url(../../../images/bg-stars.svg);
+}

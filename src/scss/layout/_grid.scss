@@ -1,0 +1,29 @@
+@use '../base/variables';
+
+.countdown {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    
+    
+     .box {
+        display: grid;
+        gap: 1em;
+        place-items: center;
+        .item{
+            color: var(--clr-softRed);
+            width: 65px;
+            height: 55px;
+            font-size: 2rem;
+            font-weight: var(--fw-700);
+            background-color: var(--clr-darkBlue);
+            text-align: center;
+        }
+        .time {
+            color: var(--clr-grayishBlue);
+        }
+    }
+}
+footer {
+    background-image: url(../../../images/pattern-hills.svg);
+}
